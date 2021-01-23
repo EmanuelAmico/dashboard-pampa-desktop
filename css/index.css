@@ -1,0 +1,182 @@
+/*--------------------RESET----------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*--------------------PARA EL RESPONSIVE------------------------*/
+html{
+    font-size: 62.5%;
+    /*1 rem = 10px*/ 
+}
+body{
+    height: 100vh;
+    display: flex;
+}
+img{
+    display: block;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+h2{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+nav{
+    width: 15%;
+    height: 100%;
+    background-color: #145762;
+    display: flex;
+    flex-direction: column;
+}
+.nav-opcion img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.nav-opcion h2{
+    color: white;
+}
+.logo{
+    background-color: rgb(0, 72, 83);
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-image{
+    width: 12rem;
+    height: 2.8rem;
+}
+.nav-opcion{
+    height: 5rem;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+}
+.nav-opcion:hover{
+    background-color: rgb(10, 77, 88);
+}
+.nav-opcion img{
+    margin: 0rem 1rem 0rem 1rem;
+}
+.desplegar{
+    display: flex;
+}
+#desplegar{
+    justify-content: space-between;
+}
+#sin-imagen-al-principio{
+    padding-left: 3.6rem;
+}
+/*--------------------HEADER------------------------*/
+section{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+header div{
+    display: flex;
+}
+header h3{
+    margin: 0rem 1rem 0rem 1rem;
+}
+header img{
+    margin: 0rem 1rem 0rem 1rem;
+}
+/*--------------------PUNTO DE VENTA------------------------*/
+.punto-de-venta{
+    background-color: rgb(0, 72, 83);
+    width: 100%;
+    height: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.lugar-buscador-crear{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lugar-elegido{
+    display: flex;
+    align-items: center;
+}
+.lugar-elegido img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+h4{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+h5{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.lugar-procedencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.2rem;
+}
+.lugar-procedencia h5{
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.buscador{
+    background-color: white;
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.buscador form input{
+    width: 100%;
+    height: 4rem;
+}
+.buscador::before{
+    content: "";
+    position: relative;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    right: 2rem;
+}
+.buscador::after{
+    content: "";
+    position: relative;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    left: 2rem;
+}
+@media (min-width:1680px){
+    html{
+        font-size: 90%;
+    }
+}
