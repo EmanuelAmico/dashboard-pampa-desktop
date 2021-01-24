@@ -64,6 +64,13 @@ nav{
 .nav-opcion:focus{
     background-color: rgb(10, 77, 88);
 }
+.nav-opcion:focus img{
+    transition: 0.75s;
+    transform: rotate(360deg);
+}
+.nav-opcion:focus img#rotar180{
+    transform: rotate(180deg);
+}
 .nav-opcion img{
     margin: 0rem 1.6rem 0rem 1.6rem;
 }
@@ -260,7 +267,8 @@ h5{
     border-radius: 0.8rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.045);
     margin: 0rem 3rem 0rem 0rem;
-    transition: 0.25s;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.5s;
 }
 .configuraciones h4{
     color: rgb(20, 87, 98);
