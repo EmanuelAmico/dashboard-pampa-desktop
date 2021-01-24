@@ -56,8 +56,12 @@ nav{
     align-items: center;
     position: relative;
     top: 3.2rem;
+    transition: 0.5s;
 }
 .nav-opcion:hover{
+    background-color: rgb(10, 77, 88);
+}
+.nav-opcion:focus{
     background-color: rgb(10, 77, 88);
 }
 .nav-opcion img{
@@ -220,6 +224,7 @@ h5{
     height: 100%;
     display: flex;
     align-items: center;
+    transition: 0.09s;
 }
 .menu a:hover{
     border-bottom: 0.2rem solid rgb(255, 88, 45);
@@ -251,6 +256,7 @@ h5{
     border-radius: 0.8rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.045);
     margin: 0rem 3rem 0rem 0rem;
+    transition: 0.25s;
 }
 .configuraciones h4{
     color: rgb(20, 87, 98);
@@ -269,8 +275,11 @@ h5{
 .configuraciones#otro-ultimo{
     margin: 0rem 0rem 0rem 0rem;
 }
-/*@media (min-width:1681px){
+.configuraciones:hover{
+    transform: scale(1.05);
+}
+@media (min-width:1681px){
     html{
-        font-size: 75%;
+        font-size: 67.3%;
     }
-}*/
+}
