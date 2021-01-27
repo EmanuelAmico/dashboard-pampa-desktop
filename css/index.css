@@ -23,20 +23,10 @@ body{
     display: flex;
 }
 /*------------------------NAVIGATION----------------------------*/
-h2{
-    font-size: 1.4rem;
-    font-weight: 400;
-}
 nav{
     width: 24rem;
     height: 90rem;
     background-color: #145762;
-    display: flex;
-    flex-direction: column;
-}
-.nav-opcion img{
-    width: 1.6rem;
-    height: 1.6rem;
 }
 .logo{
     background-color: rgb(0, 72, 83);
@@ -46,7 +36,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.logo-image{
+.logo img{
     width: 12rem;
     height: 2.8rem;
 }
@@ -56,6 +46,13 @@ nav{
     align-items: center;
     position: relative;
     top: 3.2rem;
+}
+.nav-opcion img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0rem 1.6rem 0rem 1.6rem;
+}
+.nav-opcion h2{
     font-size: 1.4rem;
     font-weight: 400;
     color: white;
@@ -74,9 +71,6 @@ nav{
 }
 .nav-opcion:focus img.rotar180{
     transform: rotate(180deg);
-}
-.nav-opcion img{
-    margin: 0rem 1.6rem 0rem 1.6rem;
 }
 .desplegar{
     display: flex;
