@@ -38,9 +38,6 @@ nav{
     width: 1.6rem;
     height: 1.6rem;
 }
-.nav-opcion h2{
-    color: white;
-}
 .logo{
     background-color: rgb(0, 72, 83);
     width: 24rem;
@@ -59,6 +56,9 @@ nav{
     align-items: center;
     position: relative;
     top: 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
 }
 .nav-opcion:hover{
     transition: 0.5s;
@@ -72,7 +72,7 @@ nav{
     transition: 0.75s;
     transform: rotate(360deg);
 }
-.nav-opcion:focus img#rotar180{
+.nav-opcion:focus img.rotar180{
     transform: rotate(180deg);
 }
 .nav-opcion img{
@@ -81,10 +81,10 @@ nav{
 .desplegar{
     display: flex;
 }
-#desplegar{
+.con-space-between{
     justify-content: space-between;
 }
-#sin-imagen-al-principio{
+.sin-imagen-al-principio{
     padding-left: 4.8rem;
 }
 /*--------------------------SECTION-----------------------------*/
@@ -98,7 +98,7 @@ h3{
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
 }
-header h3#abm{
+header h3.abm{
     margin: 0rem 0rem 0rem 4rem;
 }
 header div .usuario{
@@ -121,7 +121,7 @@ header div{
 header img{
     margin: 0rem 0.8rem 0rem 0.8rem;
 }
-header img#header-ultima{
+header img.header-ultima{
     margin: 0rem 2.8rem 0rem 0.8rem;
 }
 /*------------------------PUNTO DE VENTA------------------------*/
@@ -174,16 +174,13 @@ h5{
 .lugar-procedencia h5{
     margin: 0rem 0.8rem 0rem 0.8rem;
 }
-.lugar-procedencia #primer-lugar{
+.lugar-procedencia .primer-lugar{
     margin: 0rem 0.8rem 0rem 0rem;
 }
-.lugar-procedencia #ultimo-lugar{
+.lugar-procedencia .ultimo-lugar{
     margin: 0rem 0rem 0rem 0.8rem;
 }
 /*--------------------------BUSCADOR----------------------------*/
-form{
-    display: flex;
-}
 .buscador{
     display: flex;
     justify-content: center;
@@ -203,19 +200,9 @@ form{
 .buscador input::placeholder{
     font-size: 1.4rem;
     font-weight: 400;
-    display: hidden;
-}
-.buscador input:focus > ::placeholder{
-    display: none;
-}
-.buscador button{
-    border: none;
-    outline: none;
-    background-color: white;
-    border-radius: 1.2rem;
 }
 /*------------------BOTÓN:CREAR PUNTO DE VENTA------------------*/
-.crear-punto-venta h3{
+.crear-punto-venta a{
     background-color: rgb(30, 136, 245);
     color: white;
     padding: 1.6rem 2.4rem 1.6rem 2.4rem;
@@ -233,17 +220,14 @@ form{
     display: flex;
     align-items: center;
 }
-.menu h3{
+.menu a{
     color: black;
     font-size: 1.6rem;
     font-weight: 400;
-    margin: 0rem 6.85rem 0rem 6.85rem;
+    padding: 0rem 6.85rem 0rem 6.85rem;
 }
-.menu h3#punto-de-venta{
-    margin: 0rem 6.85rem 0rem 4.7rem;
-}
-.menu h3#configuracion{
-    margin: 0rem 6.85rem 0rem 6.85rem;
+.menu a.primera-opcion{
+    padding: 0rem 6.85rem 0rem 4.7rem;
 }
 .menu a{
     height: 100%;
@@ -291,7 +275,7 @@ form{
     font-weight: 400;
     margin: 0rem 0rem 1rem 0rem;
 }
-.configuraciones p#activado{
+.configuraciones p.activado{
     color: rgb(0, 166, 121);
 }
 .configuraciones p{
@@ -299,7 +283,7 @@ form{
     font-size: 1.4rem;
     font-weight: 400;
 }
-.configuraciones#otro-ultimo{
+.configuraciones.ultima-caja{
     margin: 0rem 0rem 0rem 0rem;
 }
 .configuraciones:hover{
