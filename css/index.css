@@ -96,8 +96,10 @@ h3{
     color: rgba(0, 0, 0, 0.87);
 }
 header h3.abm{
+    margin: 0rem 0rem 0rem 2rem;
 }
 header div .usuario{
+    margin: 0rem 1rem 0rem 0rem;
 }
 header{
     display: flex;
@@ -247,6 +249,8 @@ h5{
     padding: 3.2rem;
     width: 93.75%;
     margin: 0rem 0rem 3.125% 0rem;
+    /*Aunque le ponga un % margin vertical 
+    sigue usando % en referencia al horizontal*/ 
 }
 .configuraciones{
     display: flex;
@@ -282,9 +286,22 @@ h5{
     transform: scale(1.05);
     transition: 0.75s;
 }
-@media (max-width:1681px){
+@media (max-width:1330px){
     html{
-        font-size: 60%;
+        font-size: 57.5%;
+    }
+    .configuraciones{
+        height: 17.3rem;
+        padding: 4rem;
+    }
+}
+@media (max-width:1023px){
+    html{
+        font-size: 55%;
+    }
+    .configuraciones{
+        height: 12.975rem;
+        padding: 1rem;
     }
 }
 /*------------------RESPONSIVE: MEDIA QUERIES-------------------*/
